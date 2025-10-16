@@ -13,10 +13,10 @@ namespace EDPilaEjercicio2
 
         public Pila()
         {
-            nodoAncla = new Nodo(); // ancla como cabeza vacía
+            nodoAncla = new Nodo();
         }
 
-        // Clase interna privada
+       
         private class Nodo
         {
             public T Valor { get; set; }
@@ -43,7 +43,7 @@ namespace EDPilaEjercicio2
             T valor = nodoTrabajo.Valor;
 
             nodoAncla.Siguiente = nodoTrabajo.Siguiente;
-            nodoTrabajo.Siguiente = null; // desconecta el nodo
+            nodoTrabajo.Siguiente = null; 
 
             return valor;
         }
