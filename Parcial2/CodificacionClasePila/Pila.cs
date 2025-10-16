@@ -16,7 +16,6 @@ namespace PilaEstructuraDeDatos
             nodoAncla = new Nodo(); 
         }
 
-        // Clase interna privada
         private class Nodo
         {
             public T Valor { get; set; }
