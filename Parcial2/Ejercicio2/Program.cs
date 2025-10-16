@@ -19,13 +19,11 @@ public class Program
     {
         Pila<char> pila = new Pila<char>();
 
-        // Apilar todos los caracteres
+      
         foreach (char c in texto)
         {
             pila.Push(c);
         }
-
-        // Comparar mientras desapilamos
         foreach (char c in texto)
         {
             if (c != pila.Pop())
